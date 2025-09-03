@@ -1,0 +1,181 @@
+/* --- General Styling & Fun Font --- */
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* --- Header & Hero Section --- */
+header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid #FFC107;
+}
+
+.header-content .logo {
+    font-size: 1em;
+    font-weight: bold;
+    background: #FFC107;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0.5rem 0;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header .subtitle {
+    font-size: 1.4em;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.product-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.product-hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    margin-bottom: 1.5rem;
+}
+
+.product-hero .tagline {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.product-hero p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* --- Tabbed Use-Cases Section --- */
+.use-cases {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.use-cases h3 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.tab-link {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    font-size: 1.1em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    color: #555;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-link:hover {
+    color: #2575fc;
+}
+
+.tab-link.active {
+    color: #2575fc;
+    border-bottom: 3px solid #2575fc;
+}
+
+.tab-content {
+    display: none;
+    text-align: left;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Call to Action & Form --- */
+.cta {
+    background: linear-gradient(135deg, #FFC107 0%, #ff8a00 100%);
+    color: #333;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.cta h3 {
+    font-size: 2.2em;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 300px; /* Reduced height for a more compact form */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+}
+
+.fine-print {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    background-color: #333;
+    color: #fff;
+}

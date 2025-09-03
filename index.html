@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Backpack Back Hand™ - The Ultimate (and Unnecessary) Focus Tool</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/hand-sparkles.svg" type="image/svg+xml">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="logo">Unnecessary Necessities Co.</span>
+            <h1>The Backpack Back Hand™</h1>
+            <p class="subtitle">Your Focus. Our Force. (And a Firm, Silicon Hand.)</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-hero">
+            <img src="backpack-hand.png" alt="A person looking surprised as a mechanical hand from a backpack slaps them.">
+            
+            <h2 class="tagline">Stop Distraction Dead in its Tracks. Literally.</h2>
+        </div>
+
+        <section class="use-cases">
+            <h3>Who Needs a Helping Hand?</h3>
+            <div class="tabs">
+                <button class="tab-link active" onclick="openUse(event, 'ADHD')">The Wandering Mind</button>
+                <button class="tab-link" onclick="openUse(event, 'Eyes')">The Wandering Eye</button>
+                <button class="tab-link" onclick="openUse(event, 'Shopping')">The Aimless Shopper</button>
+            </div>
+
+            <div id="ADHD" class="tab-content" style="display: block;">
+                <h4>For the Productivity Procrastinator</h4>
+                <p>Ever walk into a room and forget why? Ever find yourself 20 tabs deep into researching the migratory patterns of geese when you should be finishing a report? The Backpack Back Hand™ detects the subtle shift in direction that signals a new, unscheduled "micro-adventure" and gently (or not-so-gently) slaps you back to reality. It's like having a personal project manager on your back. A very persistent, slappy project manager.</p>
+            </div>
+
+            <div id="Eyes" class="tab-content">
+                <h4>For the Partner with a... Roving Gaze</h4>
+                <p>Ensure their focus remains squarely on you, not on every person who walks by. Perfect for romantic dinners, crowded events, or just a walk in the park. Our patented "GazeGuard™" technology (which is totally real, we promise) senses rapid, unauthorized head-turns and delivers a swift, attention-grabbing correction. It's the ultimate tool for "keeping them honest" and a hilarious way to say, "Hey, I'm over here!"</p>
+            </div>
+
+            <div id="Shopping" class="tab-content">
+                <h4>For the 'Just Looking' Marathoner</h4>
+                <p>Is your partner's "quick trip to the store" a three-hour expedition through every single aisle? The Backpack Back Hand™ is the perfect shopping companion. Set it to "Flea Market Mode" to discourage lingering over dusty antiques, or "Jewelry Store Jolt" to prevent unnecessary sparkly purchases. It keeps the mission on track: get in, get the list, and get out before the credit card starts smoking.</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h3>Pre-Order Now and Reclaim Your Focus!</h3>
+            <p>Be the first on your block to own this marvel of unnecessary engineering. Sign up below and we'll slap an email into your inbox the moment it's available!</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLejNTBFpCiMrjTZEcT92EICFjdtX56RfAYW4zSUfUzW0bnw/viewform?embedded=true" width="640" height="944" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            
+            <p class="fine-print">Disclaimer: This is a gag gift. The box is (mostly) empty. Unnecessary Necessities Co. is not responsible for arguments, sore necks, or any sudden improvements in focus. Use with a sense of humor.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Unnecessary Necessities Co. | Innovators in Fictional Problem-Solving.</p>
+    </footer>
+
+    <script>
+        function openUse(evt, useName) {
+            // Get all elements with class="tab-content" and hide them
+            let tabcontent = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tab-link" and remove the class "active"
+            let tablinks = document.getElementsByClassName("tab-link");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(useName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>
