@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty Box Edition - Backpack Backhand™ | Unnecessary Necessities</title>
+    <meta name="description" content="The ultimate prank gift - a beautifully packaged empty box that promises the world's most unnecessary product. Perfect for jokesters and pranksters!">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/box-open.svg" type="image/svg+xml">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../product-styles.css">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Empty Box Edition - Backpack Backhand™">
+    <meta property="og:description" content="The ultimate prank gift - a beautifully packaged empty box that promises the world's most unnecessary product.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/empty-box-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">Unnecessary Necessities Co.</a>
+            <h1>Empty Box Edition</h1>
+            <p class="subtitle">All the anticipation, none of the functionality!</p>
+            
+            <div class="product-hero">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="../empty-box-hero.jpg" alt="Empty Box Edition - Front View" id="mainProductImage">
+                    </div>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail active" onclick="changeImage('../empty-box-hero.jpg')">
+                            <img src="../empty-box-hero.jpg" alt="Empty Box - Front">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage('../empty-box-side.jpg')">
+                            <img src="../empty-box-side.jpg" alt="Empty Box - Side">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage('../empty-box-open.jpg')">
+                            <img src="../empty-box-open.jpg" alt="Empty Box - Open">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-details">
+                    <div class="price-section">
+                        <span class="price">$19.99</span>
+                        <span class="original-price">$29.99</span>
+                        <span class="discount">33% OFF</span>
+                    </div>
+                    
+                    <p class="product-description">
+                        The ultimate prank gift - a beautifully packaged empty box that promises the world's most unnecessary product. 
+                        Watch as your friends and family experience the full range of emotions from excitement to confusion to 
+                        reluctant amusement. It's the gift that keeps on giving (absolutely nothing)!
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>What's Included:</h3>
+                        <ul>
+                            <li>✔ Genuine empty box with official branding</li>
+                            <li>✔ Certificate of Invisible Technology</li>
+                            <li>✔ Instruction manual (joke version)</li>
+                            <li>✔ "I Got Pranked" sticker</li>
+                            <li>✔ Endless entertainment value</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="adjustQuantity(-1)">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn" onclick="adjustQuantity(1)">+</button>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-cart" onclick="addToCart('Empty Box Edition', 19.99)">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart - $19.99
+                    </button>
+                    
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Returns</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="product-info-tabs">
+            <div class="tabs">
+                <button class="tab-link active" onclick="openTab(event, 'description')">Description</button>
+                <button class="tab-link" onclick="openTab(event, 'specs')">Specifications</button>
+                <button class="tab-link" onclick="openTab(event, 'reviews')">Reviews</button>
+                <button class="tab-link" onclick="openTab(event, 'faq')">FAQ</button>
+            </div>
+            
+            <div id="description" class="tab-content active">
+                <h2>The Ultimate Prank Gift</h2>
+                <p>
+                    Our Empty Box Edition takes prank gifts to a whole new level. Meticulously designed to look exactly like 
+                    our premium Backpack Backhand™ packaging, this empty box will have your friends and family convinced 
+                    they're getting the real deal... until they open it to find absolutely nothing inside!
+                </p>
+                <p>
+                    Perfect for birthdays, holidays, or just because you feel like messing with someone, this empty box 
+                    delivers maximum comedic effect with minimal effort. The confused looks and eventual laughter are 
+                    guaranteed to be worth every penny.
+                </p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🎁</div>
+                        <h4>Perfect Prank</h4>
+                        <p>Ideal for office Secret Santa, April Fools', or just because</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Reusable</h4>
+                        <p>Use it to prank multiple people or as an actual gift box</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">😆</div>
+                        <h4>Endless Laughs</h4>
+                        <p>The gift of laughter is the best gift of all (or so they say)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="specs" class="tab-content">
+                <h2>Product Specifications</h2>
+                <div class="specs-grid">
+                    <div class="spec">
+                        <span class="spec-label">Product Dimensions</span>
+                        <span class="spec-value">10" x 8" x 4"</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Weight</span>
+                        <span class="spec-value">0.5 lbs</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Material</span>
+                        <span class="spec-value">Premium cardboard with matte finish</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Included Items</span>
+                        <span class="spec-value">Empty box, certificate, manual, sticker</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Shipping</span>
+                        <span class="spec-value">Free standard shipping (3-5 business days)</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Returns</span>
+                        <span class="spec-value">30-day money-back guarantee</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="reviews" class="tab-content">
+                <h2>Customer Reviews</h2>
+                <div class="reviews-container">
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah M." class="reviewer-avatar">
+                                <div>
+                                    <div class="reviewer-name">Sarah M.</div>
+                                    <div class="review-rating">★★★★★</div>
+                                </div>
+                            </div>
+                            <div class="review-date">2 days ago</div>
+                        </div>
+                        <h3>Best Prank Ever!</h3>
+                        <p>I gave this to my husband for his birthday. The look on his face was absolutely priceless when he opened it to find nothing inside! He's still laughing about it a week later. Worth every penny!</p>
+                    </div>
+                    
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="James T." class="reviewer-avatar">
+                                <div>
+                                    <div class="reviewer-name">James T.</div>
+                                    <div class="review-rating">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="review-date">1 week ago</div>
+                        </div>
+                        <h3>Office Hit</h3>
+                        <p>Used this for our office white elephant gift exchange. The person who got it was confused at first, but once they realized it was a prank, everyone was dying laughing. The packaging is super high quality too!</p>
+                    </div>
+                    
+                    <button class="write-review-btn">Write a Review</button>
+                </div>
+            </div>
+            
+            <div id="faq" class="tab-content">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">Is this really just an empty box? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes! That's the whole point. It's a prank gift designed to look like a real product but contains nothing inside except for some fun printed materials.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">Can I put my own gift inside? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Many of our customers use the box to prank someone first, then surprise them with a real gift inside later. The box is sturdy and can be reused.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">How long does shipping take? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We offer free standard shipping which typically takes 3-5 business days within the US. Expedited shipping options are available at checkout.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What's your return policy? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money-back guarantee. If you're not completely satisfied with your empty box (or lack thereof), you can return it for a full refund.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="related-products">
+            <h2>You Might Also Like</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-badge">BEST SELLER</div>
+                    <img src="../rain-check-preview.jpg" alt="Rain Check Voucher">
+                    <h3>Rain Check Voucher</h3>
+                    <p class="product-price">$14.99</p>
+                    <a href="rain-check.html" class="btn btn-outline">View Details</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-badge">DIGITAL</div>
+                    <img src="../digital-download-preview.jpg" alt="Digital Download">
+                    <h3>Digital Download</h3>
+                    <p class="product-price">$9.99</p>
+                    <a href="digital-download.html" class="btn btn-outline">View Details</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-badge">BUNDLE</div>
+                    <img src="../bundle-preview.jpg" alt="Prankster's Bundle">
+                    <h3>Prankster's Bundle</h3>
+                    <p class="product-price">$39.99 <span class="original-price">$59.97</span></p>
+                    <a href="#" class="btn btn-primary">Save 33%</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Unnecessary Necessities Co.</span>
+                <p>Creating solutions to problems that don't exist since 2025</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <a href="../index.html#products">All Products</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Size Guide</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay in Touch</h4>
+                    <p>Get the latest on new products and sales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Unnecessary Necessities Co. | Innovators in Fictional Problem-Solving.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <span>•</span>
+                <a href="#">Terms of Service</a>
+                <span>•</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            var tabContent = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove('active');
+            }
+
+            // Remove active class from all tab buttons
+            var tabLinks = document.getElementsByClassName('tab-link');
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove('active');
+            }
+
+            // Show the current tab and add active class to the button
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Quantity selector
+        function adjustQuantity(change) {
+            const quantityInput = document.getElementById('quantity');
+            let newValue = parseInt(quantityInput.value) + change;
+            if (newValue < 1) newValue = 1;
+            if (newValue > 10) newValue = 10;
+            quantityInput.value = newValue;
+            updateAddToCartButton(newValue);
+        }
+
+        // Update add to cart button with quantity
+        function updateAddToCartButton(quantity) {
+            const button = document.querySelector('.add-to-cart');
+            const price = 19.99;
+            const total = (price * quantity).toFixed(2);
+            button.innerHTML = `<i class="fas fa-shopping-cart"></i> Add to Cart - $${total}`;
+        }
+
+        // Add to cart function
+        function addToCart(productName, price) {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const total = (price * quantity).toFixed(2);
+            alert(`Added ${quantity}x ${productName} to cart. Total: $${total}`);
+            // In a real implementation, this would add the item to a shopping cart
+        }
+
+        // Change product image
+        function changeImage(src) {
+            document.getElementById('mainProductImage').src = src;
+            // Update active thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+                
+                // Close other open answers
+                faqQuestions.forEach(item => {
+                    if (item !== question) {
+                        const otherAnswer = item.nextElementSibling;
+                        const otherIcon = item.querySelector('i');
+                        otherAnswer.style.maxHeight = null;
+                        otherIcon.classList.remove('fa-chevron-up');
+                        otherIcon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Hide loading overlay
+        function hideLoadingOverlay() {
+            const loadingOverlay = document.querySelector('.loading-overlay');
+            if (loadingOverlay) {
+                loadingOverlay.classList.add('hidden');
+                // Remove the overlay from the DOM after the animation completes
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                }, 500);
+            }
+        }
+
+        // Hide overlay when page is fully loaded
+        if (document.readyState === 'complete') {
+            hideLoadingOverlay();
+        } else {
+            window.addEventListener('load', hideLoadingOverlay);
+            // Fallback in case the load event doesn't fire
+            setTimeout(hideLoadingOverlay, 3000);
+        }
+    </script>
+</body>
+</html>

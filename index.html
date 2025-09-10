@@ -4,86 +4,352 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Backpack Back Hand™ - The Ultimate (and Unnecessary) Focus Tool</title>
+    <meta name="description" content="A hilarious gag gift that promises to keep you focused - whether you're easily distracted, have wandering eyes, or just need help staying on task. The Backpack Back Hand™ has got your back!">
     
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/hand-sparkles.svg" type="image/svg+xml">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/hand-sparkles.svg" type="image/svg+xml">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="The Backpack Back Hand™ - The Ultimate (and Unnecessary) Focus Tool">
+    <meta property="og:description" content="A hilarious gag gift that promises to keep you focused - whether you're easily distracted, have wandering eyes, or just need help staying on task.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/backpack-backhand-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M12 4l-8 8h5v8h6v-8h5z"/>
+        </svg>
+    </button>
 
     <header>
         <div class="header-content">
-            <span class="logo">Unnecessary Necessities Co.</span>
-            <h1>The Backpack Back Hand™</h1>
-            <p class="subtitle">Your Focus. Our Force. (And a Firm, Silicon Hand.)</p>
+            <a href="/" class="logo">Unnecessary Necessities Co.</a>
+            <nav>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#preorder" class="cta-button cta-small">
+                    <i class="fas fa-shopping-cart"></i> Shop Now
+                </a>
+            </nav>
         </div>
     </header>
+    
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h1>The Backpack Back Hand™</h1>
+            <p class="subtitle">Your Focus. Our Force. (And a Firm, Silicon Hand.)</p>
+            <div class="cta-buttons">
+                <a href="#preorder" class="cta-button cta-primary">
+                    <i class="fas fa-shopping-cart"></i> Pre-Order Now
+                </a>
+                <a href="#how-it-works" class="cta-button cta-secondary">
+                    <i class="fas fa-question-circle"></i> How It Works
+                </a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <div class="product-hero">
-            <img src="backpack-hand.png" alt="A person looking surprised as a mechanical hand from a backpack slaps them.">
+            <div class="hero-image-container">
+                <img src="backpack-backhand.png" alt="A person looking surprised as a mechanical hand from a backpack slaps them" class="floating">
+                <div class="product-badge">
+                    <span class="best-seller">BEST SELLER</span>
+                    <span class="sale">LIMITED STOCK</span>
+                </div>
+            </div>
             
             <h2 class="tagline">Stop Distraction Dead in its Tracks. Literally.</h2>
+            <p class="hero-description">The world's first (and probably last) backpack with a built-in attention correction system. Perfect for the easily distracted, the chronically unfocused, and anyone who needs a good metaphorical (and slightly physical) slap back to reality.</p>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🚀</div>
+                    <h4>Instant Focus</h4>
+                    <p>Get back on track with a gentle (or not-so-gentle) reminder</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔋</div>
+                    <h4>Long Battery Life</h4>
+                    <p>Up to 1,000 corrective slaps per charge</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Precision Targeting</h4>
+                    <p>Patented technology ensures perfect aim every time</p>
+                </div>
+            </div>
         </div>
 
         <section class="use-cases">
             <h3>Who Needs a Helping Hand?</h3>
             <div class="tabs">
-                <button class="tab-link active" onclick="openUse(event, 'ADHD')">The Wandering Mind</button>
-                <button class="tab-link" onclick="openUse(event, 'Eyes')">The Wandering Eye</button>
-                <button class="tab-link" onclick="openUse(event, 'Shopping')">The Aimless Shopper</button>
+                <button class="tab-link active" onclick="openUse(event, 'wandering-mind')">The Wandering Mind</button>
+                <button class="tab-link" onclick="openUse(event, 'wandering-eye')">The Wandering Eye</button>
+                <button class="tab-link" onclick="openUse(event, 'aimless-shopper')">The Aimless Shopper</button>
             </div>
 
-            <div id="ADHD" class="tab-content" style="display: block;">
-                <h4>For the Productivity Procrastinator</h4>
+            <div class="tab-pane" id="wandering-mind">
+                <div class="placeholder-svg">
+                    <svg width="100%" height="100%" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="#f0f5ff" rx="8" ry="8"/>
+                        <text x="50%" y="50%" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle" fill="#4a6baf">Backpack Backhand - The Procrastinator's Friend</text>
+                        <circle cx="100" cy="100" r="40" fill="#e1e8ff"/>
+                        <path d="M90 90 L110 110 M110 90 L90 110" stroke="#4a6baf" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>For the Productivity Procrastinator</h3>
                 <p>Ever walk into a room and forget why? Ever find yourself 20 tabs deep into researching the migratory patterns of geese when you should be finishing a report? The Backpack Back Hand™ detects the subtle shift in direction that signals a new, unscheduled "micro-adventure" and gently (or not-so-gently) slaps you back to reality. It's like having a personal project manager on your back. A very persistent, slappy project manager.</p>
             </div>
 
-            <div id="Eyes" class="tab-content">
-                <h4>For the Partner with a... Roving Gaze</h4>
+            <div class="tab-pane" id="wandering-eye">
+                <div class="placeholder-svg">
+                    <svg width="100%" height="100%" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="#fff0f5" rx="8" ry="8"/>
+                        <text x="50%" y="50%" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle" fill="#af4a6b">GazeGuard™ Technology</text>
+                        <circle cx="100" cy="100" r="30" fill="#ffd6e7"/>
+                        <circle cx="100" cy="100" r="15" fill="#af4a6b"/>
+                        <path d="M80 80 Q100 120 120 80" fill="none" stroke="#af4a6b" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>For the Partner with a... Roving Gaze</h3>
                 <p>Ensure their focus remains squarely on you, not on every person who walks by. Perfect for romantic dinners, crowded events, or just a walk in the park. Our patented "GazeGuard™" technology (which is totally real, we promise) senses rapid, unauthorized head-turns and delivers a swift, attention-grabbing correction. It's the ultimate tool for "keeping them honest" and a hilarious way to say, "Hey, I'm over here!"</p>
             </div>
 
-            <div id="Shopping" class="tab-content">
-                <h4>For the 'Just Looking' Marathoner</h4>
+            <div class="tab-pane" id="aimless-shopper">
+                <div class="placeholder-svg">
+                    <svg width="100%" height="100%" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="#f0fff5" rx="8" ry="8"/>
+                        <text x="50%" y="50%" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle" fill="#4aaf6b">Shopping Mode Activated</text>
+                        <rect x="120" y="80" width="40" height="60" rx="5" fill="#d6ffe7"/>
+                        <rect x="140" y="80" width="40" height="60" rx="5" fill="#d6ffe7"/>
+                        <path d="M140 100 L160 100 M140 115 L160 115 M140 130 L160 130" stroke="#4aaf6b" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>For the 'Just Looking' Marathoner</h3>
                 <p>Is your partner's "quick trip to the store" a three-hour expedition through every single aisle? The Backpack Back Hand™ is the perfect shopping companion. Set it to "Flea Market Mode" to discourage lingering over dusty antiques, or "Jewelry Store Jolt" to prevent unnecessary sparkly purchases. It keeps the mission on track: get in, get the list, and get out before the credit card starts smoking.</p>
             </div>
         </section>
 
-        <section class="cta">
+        <section id="preorder" class="cta">
             <h3>Pre-Order Now and Reclaim Your Focus!</h3>
             <p>Be the first on your block to own this marvel of unnecessary engineering. Sign up below and we'll slap an email into your inbox the moment it's available!</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLejNTBFpCiMrjTZEcT92EICFjdtX56RfAYW4zSUfUzW0bnw/viewform?embedded=true" width="640" height="944" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             
-            <p class="fine-print">Disclaimer: This is a gag gift. The box is (mostly) empty. Unnecessary Necessities Co. is not responsible for arguments, sore necks, or any sudden improvements in focus. Use with a sense of humor.</p>
+            <div class="form-container">
+                <div class="price-tag">
+                    <span class="original-price">$99.99</span>
+                    <span class="sale-price">$49.99</span>
+                    <span class="discount">50% OFF</span>
+                </div>
+                
+                <div class="form-wrapper">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLejNTBFpCiMrjTZEcT92EICFjdtX56RfAYW4zSUfUzW0bnw/viewform?embedded=true" title="Pre-order Form">Loading…</iframe>
+                </div>
+                
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="currentColor"/></svg>
+                        <span>100% Satisfaction Guarantee</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="currentColor"/></svg>
+                        <span>Free Shipping Worldwide</span>
+                    </div>
+                    <div class="trust-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="currentColor"/></svg>
+                        <span>Secure Checkout</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="fine-print">
+                <strong>Disclaimer:</strong> This is a gag gift. The box is (mostly) empty. Unnecessary Necessities Co. is not responsible for arguments, sore necks, or any sudden improvements in focus. Use with a sense of humor. 
+                <span class="disclaimer-note">(No actual slapping occurs. Batteries not included. Results not typical. May cause uncontrollable laughter.)</span>
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Unnecessary Necessities Co. | Innovators in Fictional Problem-Solving.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Unnecessary Necessities Co.</span>
+                <p>Creating solutions to problems that don't exist since 2025</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <a href="#">All Products</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Size Guide</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay in Touch</h4>
+                    <p>Get the latest on new products and sales</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">→</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.853 1.035 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772c-.5.508-1.035.853-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 1.802c-2.67 0-2.986.01-4.04.059-.976.045-1.505.207-1.858.344-.466.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.048 1.055-.058 1.37-.058 4.04 0 2.67.01 2.986.058 4.04.045.977.207 1.505.344 1.858.182.466.399.8.748 1.15.35.35.684.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.04.058 2.67 0 2.986-.01 4.04-.058.977-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.684.748-1.15.137-.353.3-.88.344-1.858.048-1.054.058-1.37.058-4.04 0-2.67-.01-2.986-.058-4.04-.045-.976-.207-1.505-.344-1.858a3.095 3.095 0 0 0-.748-1.15 3.098 3.098 0 0 0-1.15-.748c-.353-.137-.881-.3-1.857-.344-1.054-.048-1.37-.059-4.04-.059zm0 3.19a4.008 4.008 0 1 1 0 8.016 4.008 4.008 0 0 1 0-8.017zm0 6.61a2.603 2.603 0 1 0 0-5.206 2.603 2.603 0 0 0 0 5.206zM16.52 7.18a.936.936 0 1 1 1.867 0 .936.936 0 0 1-1.867 0z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.19 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Unnecessary Necessities Co. | Innovators in Fictional Problem-Solving.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <span>•</span>
+                <a href="#">Terms of Service</a>
+                <span>•</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
     </footer>
 
     <script>
-        function openUse(evt, useName) {
-            // Get all elements with class="tab-content" and hide them
-            let tabcontent = document.getElementsByClassName("tab-content");
-            for (let i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+        // Tab functionality
+        function openUse(evt, useCase) {
+            // Hide all tab content
+            var tabContent = document.getElementsByClassName('tab-pane');
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove('active');
             }
 
-            // Get all elements with class="tab-link" and remove the class "active"
-            let tablinks = document.getElementsByClassName("tab-link");
-            for (let i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            // Remove active class from all tab buttons
+            var tabLinks = document.getElementsByClassName('tab-link');
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove('active');
             }
 
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(useName).style.display = "block";
-            evt.currentTarget.className += " active";
+            // Show the current tab and add active class to the button
+            document.getElementById(useCase).classList.add('active');
+            evt.currentTarget.classList.add('active');
         }
+
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Show the first tab by default
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show first tab
+            document.querySelector('.tab-pane').classList.add('active');
+            document.querySelector('.tab-link').classList.add('active');
+            
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#' || targetId === '#!') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Hide loading overlay
+            function hideLoadingOverlay() {
+                const loadingOverlay = document.querySelector('.loading-overlay');
+                if (loadingOverlay) {
+                    loadingOverlay.classList.add('hidden');
+                    // Remove the overlay from the DOM after the animation completes
+                    setTimeout(() => {
+                        loadingOverlay.style.display = 'none';
+                    }, 500);
+                }
+            }
+
+            // Hide overlay when page is fully loaded
+            if (document.readyState === 'complete') {
+                hideLoadingOverlay();
+            } else {
+                window.addEventListener('load', hideLoadingOverlay);
+                // Fallback in case the load event doesn't fire
+                setTimeout(hideLoadingOverlay, 3000);
+            }
+        });
+
+        // Add animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.feature, .tab-content, .product-hero img');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('animate');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run once on page load
     </script>
 
 </body>

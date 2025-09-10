@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Check Voucher - Backpack Backhand™ | Unnecessary Necessities</title>
+    <meta name="description" content="A hilariously perfect rain check voucher for the Backpack Backhand™. The perfect way to prank someone with the promise of protection from wandering eyes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/umbrella.svg" type="image/svg+xml">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../product-styles.css">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Rain Check Voucher - Backpack Backhand™">
+    <meta property="og:description" content="A hilariously perfect rain check voucher for the Backpack Backhand™. The perfect way to prank someone with the promise of protection from wandering eyes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/rain-check-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <header>
+        <div class="header-content">
+            <a href="../index.html" class="logo">Unnecessary Necessities Co.</a>
+            <h1>Rain Check Voucher</h1>
+            <p class="subtitle">The perfect excuse for when you've been caught looking... again.</p>
+            
+            <div class="product-hero">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="../rain-check-hero.jpg" alt="Rain Check Voucher - Front View" id="mainProductImage">
+                    </div>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail active" onclick="changeImage('../rain-check-hero.jpg')">
+                            <img src="../rain-check-hero.jpg" alt="Voucher - Front">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage('../rain-check-open.jpg')">
+                            <img src="../rain-check-open.jpg" alt="Voucher - Open">
+                        </div>
+                        <div class="thumbnail" onclick="changeImage('../rain-check-envelope.jpg')">
+                            <img src="../rain-check-envelope.jpg" alt="Voucher - Envelope">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-details">
+                    <div class="price-section">
+                        <span class="price">$14.99</span>
+                        <span class="original-price">$24.99</span>
+                        <span class="discount">40% OFF</span>
+                    </div>
+                    
+                    <p class="product-description">
+                        Our premium Rain Check Voucher is the perfect way to say "I was looking, but I promise I wasn't looking-looking" 
+                        in the most official way possible. This high-quality, heavy-weight glossy certificate comes in an elegant envelope, 
+                        ready to be presented to your significant other when you've been caught in the act.
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>What's Included:</h3>
+                        <ul>
+                            <li>✔ Premium heavy-weight glossy certificate</li>
+                            <li>✔ Elegant presentation envelope</li>
+                            <li>✔ Official-looking gold foil seal</li>
+                            <li>✔ Ridiculous legal disclaimers</li>
+                            <li>✔ Endless entertainment value</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" onclick="adjustQuantity(-1)">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn" onclick="adjustQuantity(1)">+</button>
+                        </div>
+                    </div>
+                    
+                    <button class="add-to-cart" onclick="addToCart('Rain Check Voucher', 14.99)">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart - $14.99
+                    </button>
+                    
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Returns</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="product-info-tabs">
+            <div class="tabs">
+                <button class="tab-link active" onclick="openTab(event, 'description')">Description</button>
+                <button class="tab-link" onclick="openTab(event, 'specs')">Specifications</button>
+                <button class="tab-link" onclick="openTab(event, 'reviews')">Reviews</button>
+                <button class="tab-link" onclick="openTab(event, 'faq')">FAQ</button>
+            </div>
+            
+            <div id="description" class="tab-content active">
+                <h2>When Your Eyes Wander, But Your Heart Stays True</h2>
+                <p>
+                    We've all been there. You're out for a lovely stroll, enjoying the scenery, when suddenly—bam!—
+                    your eyes lock onto something... interesting. Before you know it, you've been caught in the act. 
+                    Cue the awkward explanations and the "I was just looking at their shoes!" excuses.
+                </p>
+                <p>
+                    That's where our Rain Check Voucher comes in. This official-looking certificate is your get-out-of-jail-free 
+                    card for those moments when your eyes decide to go on an adventure without consulting you first. 
+                    Simply present this voucher to your significant other, and voilà—instant forgiveness (or at least a good laugh).
+                </p>
+                
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🎭</div>
+                        <h4>Save Face</h4>
+                        <p>Turn an awkward moment into a hilarious memory with this lighthearted gesture</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💝</div>
+                        <h4>Thoughtful Gift</h4>
+                        <p>Perfect for anniversaries, Valentine's Day, or as a "just because" surprise</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">😆</div>
+                        <h4>Endless Laughs</h4>
+                        <p>Guaranteed to get a chuckle (or at least an eye roll) from your significant other</p>
+                    </div>
+                </div>
+                
+                <div class="voucher-preview" style="margin: 40px 0; text-align: center;">
+                    <h3>Official Rain Check Voucher</h3>
+                    <div style="max-width: 600px; margin: 0 auto; padding: 30px; background: #fff9e6; border: 2px dashed #f59e0b; border-radius: 10px; font-family: 'Courier New', monospace; text-align: left;">
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <h2 style="color: #2563eb; margin: 0;">OFFICIAL RAIN CHECK</h2>
+                            <p style="margin: 5px 0 0; color: #666;">Certificate of Temporary Visual Distraction</p>
+                        </div>
+                        
+                        <p>This certifies that the bearer, <strong>[YOUR NAME]</strong>, is hereby granted one (1) free pass for the following offense:</p>
+                        
+                        <div style="background: white; padding: 15px; margin: 15px 0; border-radius: 5px; border-left: 4px solid #f59e0b;">
+                            <p style="margin: 0;">"Accidentally" staring at an attractive stranger for 2.7 seconds longer than socially acceptable</p>
+                        </div>
+                        
+                        <p>This rain check entitles the bearer to one (1) instance of complete forgiveness, no questions asked. To be used at the discretion of the bearer when caught in the act of harmless visual appreciation.</p>
+                        
+                        <div style="display: flex; justify-content: space-between; margin: 25px 0 10px;">
+                            <div>
+                                <div style="border-top: 1px solid #ccc; width: 150px; margin-bottom: 5px;"></div>
+                                <span style="font-size: 0.9em; color: #666;">Signature</span>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="border-top: 1px solid #ccc; width: 150px; margin-bottom: 5px;"></div>
+                                <span style="font-size: 0.9em; color: #666;">Date</span>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 20px; font-size: 0.8em; color: #999;">
+                            <p>Issued by: Unnecessary Necessities Co.<br>
+                            This is a joke product - not a legal document<br>
+                            No actual rain checks will be honored</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="specs" class="tab-content">
+                <h2>Product Specifications</h2>
+                <div class="specs-grid">
+                    <div class="spec">
+                        <span class="spec-label">Dimensions</span>
+                        <span class="spec-value">8.5" x 11" (A4 size)</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Paper Weight</span>
+                        <span class="spec-value">120 lb. premium gloss</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Finish</span>
+                        <span class="spec-value">Glossy with gold foil accents</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Included Items</span>
+                        <span class="spec-value">Certificate, envelope, care instructions</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Shipping</span>
+                        <span class="spec-value">Free standard shipping (3-5 business days)</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Returns</span>
+                        <span class="spec-value">30-day money-back guarantee</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="reviews" class="tab-content">
+                <h2>Customer Reviews</h2>
+                <div class="reviews-container">
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Jessica K." class="reviewer-avatar">
+                                <div>
+                                    <div class="reviewer-name">Jessica K.</div>
+                                    <div class="review-rating">★★★★★</div>
+                                </div>
+                            </div>
+                            <div class="review-date">1 week ago</div>
+                        </div>
+                        <h3>Saved my relationship! (Mostly kidding... mostly)</h3>
+                        <p>I gave this to my boyfriend after he got caught staring at the waitress. At first he was confused, then he couldn't stop laughing. Now it's become a running joke between us. The quality is amazing - it looks so official!</p>
+                    </div>
+                    
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Mike R." class="reviewer-avatar">
+                                <div>
+                                    <div class="reviewer-name">Mike R.</div>
+                                    <div class="review-rating">★★★★☆</div>
+                                </div>
+                            </div>
+                            <div class="review-date">2 weeks ago</div>
+                        </div>
+                        <h3>Worth every penny</h3>
+                        <p>Bought this as a gag gift for my buddy's bachelor party. We all signed it and gave it to him as a joke. The quality is actually really good - the paper is thick and the gold foil looks classy. He's already used it twice on his fiancée!</p>
+                    </div>
+                    
+                    <button class="write-review-btn">Write a Review</button>
+                </div>
+            </div>
+            
+            <div id="faq" class="tab-content">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">Is this a real legal document? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Absolutely not! This is a novelty item meant for entertainment purposes only. It holds no legal weight and is not a substitute for actual relationship communication. But it might get you out of the doghouse for a minor offense!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">Can I customize the text on the voucher? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Currently, we don't offer customization options for the standard voucher. However, we do offer bulk orders with custom text for special occasions. Contact our customer service for more information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">How is the voucher packaged? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Each voucher comes in a protective cellophane sleeve inside a rigid mailer to prevent bending during shipping. The envelope is included but shipped separately to prevent damage.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What's your return policy? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money-back guarantee if you're not completely satisfied with your purchase. However, we can't issue refunds for vouchers that have already been used successfully to get out of trouble!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="related-products">
+            <h2>You Might Also Like</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-badge">BEST SELLER</div>
+                    <img src="../empty-box-preview.jpg" alt="Empty Box Edition">
+                    <h3>Empty Box Edition</h3>
+                    <p class="product-price">$19.99 <span class="original-price">$29.99</span></p>
+                    <a href="empty-box.html" class="btn btn-outline">View Details</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-badge">DIGITAL</div>
+                    <img src="../digital-download-preview.jpg" alt="Digital Download">
+                    <h3>Digital Download</h3>
+                    <p class="product-price">$9.99</p>
+                    <a href="digital-download.html" class="btn btn-outline">View Details</a>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-badge">BUNDLE</div>
+                    <img src="../bundle-preview.jpg" alt="Prankster's Bundle">
+                    <h3>Prankster's Bundle</h3>
+                    <p class="product-price">$39.99 <span class="original-price">$59.97</span></p>
+                    <a href="#" class="btn btn-primary">Save 33%</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Unnecessary Necessities Co.</span>
+                <p>Creating solutions to problems that don't exist since 2025</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <a href="../index.html#products">All Products</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Size Guide</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay in Touch</h4>
+                    <p>Get the latest on new products and sales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Unnecessary Necessities Co. | Innovators in Fictional Problem-Solving.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <span>•</span>
+                <a href="#">Terms of Service</a>
+                <span>•</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            var tabContent = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove('active');
+            }
+
+            // Remove active class from all tab buttons
+            var tabLinks = document.getElementsByClassName('tab-link');
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove('active');
+            }
+
+            // Show the current tab and add active class to the button
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Quantity selector
+        function adjustQuantity(change) {
+            const quantityInput = document.getElementById('quantity');
+            let newValue = parseInt(quantityInput.value) + change;
+            if (newValue < 1) newValue = 1;
+            if (newValue > 10) newValue = 10;
+            quantityInput.value = newValue;
+            updateAddToCartButton(newValue);
+        }
+
+        // Update add to cart button with quantity
+        function updateAddToCartButton(quantity) {
+            const button = document.querySelector('.add-to-cart');
+            const price = 14.99;
+            const total = (price * quantity).toFixed(2);
+            button.innerHTML = `<i class="fas fa-shopping-cart"></i> Add to Cart - $${total}`;
+        }
+
+        // Add to cart function
+        function addToCart(productName, price) {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const total = (price * quantity).toFixed(2);
+            alert(`Added ${quantity}x ${productName} to cart. Total: $${total}`);
+            // In a real implementation, this would add the item to a shopping cart
+        }
+
+        // Change product image
+        function changeImage(src) {
+            document.getElementById('mainProductImage').src = src;
+            // Update active thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+                
+                // Close other open answers
+                faqQuestions.forEach(item => {
+                    if (item !== question) {
+                        const otherAnswer = item.nextElementSibling;
+                        const otherIcon = item.querySelector('i');
+                        otherAnswer.style.maxHeight = null;
+                        otherIcon.classList.remove('fa-chevron-up');
+                        otherIcon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Hide loading overlay
+        function hideLoadingOverlay() {
+            const loadingOverlay = document.querySelector('.loading-overlay');
+            if (loadingOverlay) {
+                loadingOverlay.classList.add('hidden');
+                // Remove the overlay from the DOM after the animation completes
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                }, 500);
+            }
+        }
+
+        // Hide overlay when page is fully loaded
+        if (document.readyState === 'complete') {
+            hideLoadingOverlay();
+        } else {
+            window.addEventListener('load', hideLoadingOverlay);
+            // Fallback in case the load event doesn't fire
+            setTimeout(hideLoadingOverlay, 3000);
+        }
+    </script>
+</body>
+</html>
